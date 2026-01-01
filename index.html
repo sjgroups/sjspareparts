@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SJ Groups | Spare Parts & Workshop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SJ Groups</div>
+  <div class="tagline">Spare Parts & Workshop</div>
+</header>
+
+<section class="hero">
+  <h1>Complete Auto Care & Genuine Spare Parts</h1>
+  <p>Your one-stop destination for two-wheeler service and premium spare parts.</p>
+</section>
+
+<section class="section">
+  <h2>Product Categories</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="images/oil.jpg">
+      <h3>Engine Oils</h3>
+      <p>Castrol, Motul, Shell</p>
+      <button onclick="openModal('Engine Oils')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/spare.jpg">
+      <h3>Spare Parts</h3>
+      <p>Brake pads, filters</p>
+      <button onclick="openModal('Spare Parts')">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/tyre.jpg">
+      <h3>Tyres & Wheels</h3>
+      <p>MRF, CEAT, Apollo</p>
+      <button onclick="openModal('Tyres & Wheels')">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Visit Us</h2>
+  <iframe src="https://www.google.com/maps?q=Opp+JJ+Hospital+Kayamkulam&output=embed"></iframe>
+</section>
+
+<footer>
+  © 2026 SJ Groups | All Rights Reserved
+</footer>
+
+<!-- BUY NOW POPUP -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3 id="productName"></h3>
+    <p>📍 Opp JJ Hospital, Palace Road, Kayamkulam</p>
+    <p>📞 <a href="tel:8848898947">8848898947</a></p>
+    <p>
+      💬 <a href="https://wa.me/918848898947">WhatsApp</a>
+    </p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
